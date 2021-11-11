@@ -1,0 +1,8 @@
+Steps to run database with docker (in linux) and setup project:
+
+1- Startup docker with command docker-compose-up
+2- Access phpmyadmin in localhost:9090 
+3- If you dont have database created, create one with the name blogmicroservices
+4- If you dont have records, import from two files post.sql and topic.sql
+
+5 - clone project and run with the correct appointment to database.

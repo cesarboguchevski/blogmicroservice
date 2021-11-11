@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ "build","--network=cloudbuild", "." ]
+images:
+  - 'us-central1-docker.pkg.dev/my_project/my_docker_repo/blogMicroservice:latest'

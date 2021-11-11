@@ -1,0 +1,6 @@
+Steps to run project:
+
+1 - Start docker composer in local enviroment
+2 - Import the project e setup in intellij with jdk11
+3 - Run with springboot option
+4 - import postman collection and do the calls to endpoints.

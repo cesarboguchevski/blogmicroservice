@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "3537f0b5-1f02-48de-93c8-0beff0ad1fe0",
+		"name": "BlogMicroservices Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list-post-titles-and-topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/blogMicroservice/list-post-titles-and-topics?page=1&size=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"blogMicroservice",
+						"list-post-titles-and-topics"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-topic",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6ImFwcG9ydGVhcGkiLCJpYXQiOjE1MTYyMzkwMjJ9.yplPTSaAuzPU4vv7yLnbA_3i4PE0CNX2l5_DJuW9C6Q",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 4,\n    \"name\" : \"updated new topic 4\",\n    \"posts\": [\n        {\n            \"id\": 8,\n            \"title\": \"first post topic 4\",\n            \"text\": \"this is the first post topic 4\",\n            \"topicName\": \"topic 4\"\n        }\n\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/blogMicroservice/update-topic/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"blogMicroservice",
+						"update-topic",
+						"4"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
