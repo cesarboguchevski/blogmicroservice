@@ -17,6 +17,6 @@ public class Topic {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "topic")
-    private Set<Post> attachments = new HashSet<>();
+    private Set<Post> posts = new HashSet<>();
 
 }

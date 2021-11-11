@@ -6,7 +6,12 @@ public class PostDTO {
     private String text;
     private String topicName;
 
-    public PostDTO() {
+
+    public PostDTO(Integer id, String title, String text, String topicName) {
+        this.id = id;
+        this.title = title;
+        this.text = text;
+        this.topicName = topicName;
     }
 
     public Integer getId() {
